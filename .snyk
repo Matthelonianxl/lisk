@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.11.0
+version: v1.14.1
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
   'npm:deep-extend:20180409':
@@ -13,19 +13,19 @@ ignore:
     - socketcluster > sc-auth > sc-jsonwebtoken > joi > hoek:
         reason: None given
         expires: '2018-06-06T14:18:01.514Z'
-      joi > hoek:
-        reason: None given
-        expires: '2018-06-06T14:24:54.002Z'
     - socketcluster > sc-auth > sc-jsonwebtoken > joi > topo > hoek:
         reason: None given
         expires: '2018-06-06T14:18:01.514Z'
-      joi > topo > hoek:
-        reason: None given
-        expires: '2018-06-06T14:24:54.002Z'
     - sc-auth > sc-jsonwebtoken > joi > hoek:
         reason: None given
         expires: '2018-06-06T14:24:54.002Z'
     - sc-auth > sc-jsonwebtoken > joi > topo > hoek:
+        reason: None given
+        expires: '2018-06-06T14:24:54.002Z'
+    - joi > hoek:
+        reason: None given
+        expires: '2018-06-06T14:24:54.002Z'
+    - joi > topo > hoek:
         reason: None given
         expires: '2018-06-06T14:24:54.002Z'
   'npm:lodash:20180130':
@@ -66,3 +66,30 @@ patch:
         patched: '2018-05-07T14:24:08.423Z'
     - joi > moment:
         patched: '2018-05-07T14:24:08.423Z'
+  SNYK-JS-LODASH-567746:
+    - lodash:
+        patched: '2020-05-01T06:26:44.858Z'
+    - async > lodash:
+        patched: '2020-05-01T06:26:44.858Z'
+    - json-refs > lodash:
+        patched: '2020-05-01T06:26:44.858Z'
+    - sway > lodash:
+        patched: '2020-05-01T06:26:44.858Z'
+    - newrelic > async > lodash:
+        patched: '2020-05-01T06:26:44.858Z'
+    - json-refs > graphlib > lodash:
+        patched: '2020-05-01T06:26:44.858Z'
+    - socketcluster > async > lodash:
+        patched: '2020-05-01T06:26:44.858Z'
+    - socketcluster > inquirer > lodash:
+        patched: '2020-05-01T06:26:44.858Z'
+    - swagger-node-runner > sway > lodash:
+        patched: '2020-05-01T06:26:44.858Z'
+    - sway > json-refs > graphlib > lodash:
+        patched: '2020-05-01T06:26:44.858Z'
+    - socketcluster > socketcluster-server > async > lodash:
+        patched: '2020-05-01T06:26:44.858Z'
+    - socketcluster > sc-broker-cluster > async > lodash:
+        patched: '2020-05-01T06:26:44.858Z'
+    - swagger-node-runner > sway > json-refs > graphlib > lodash:
+        patched: '2020-05-01T06:26:44.858Z'

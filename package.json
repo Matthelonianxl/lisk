@@ -82,7 +82,7 @@
 		"sodium-native": "LiskHQ/sodium-native#dd0319f",
 		"strftime": "=0.10.0",
 		"swagger-node-runner": "=0.7.3",
-		"sway": "=1.0.0",
+		"sway": "2.0.0",
 		"valid-url": "=1.0.9",
 		"wamp-socket-cluster": "=2.0.0-beta.4",
 		"z-schema": "=3.18.2"
